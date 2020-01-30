@@ -4,4 +4,11 @@
 .navbar{
     max-height: 45px;
     box-shadow: 0px 10px 10px -15px #111;
+    margin-top: -10px;
 }
+#tophead {
+    max-height: 10px;
+    background-color: black;
+    color: white;
+    font-size: 7px;
+  }

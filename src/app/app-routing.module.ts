@@ -19,6 +19,16 @@ const routes: Routes = [
   { path: 'mod', component: BoardModeratorComponent },
   { path: 'admin', component: BoardAdminComponent },
   {path:'programs', component:ProgramsComponent},
+  {
+    path: "insertdata",
+    loadChildren: () =>
+      import(`./insertdata/insertdata.module`).then(m => m.InsertdataModule)
+  },
+  {
+    path: "manageusers",
+    loadChildren: () =>
+      import(`./manageusers/manageusers.module`).then(m => m.ManageusersModule)
+  },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
