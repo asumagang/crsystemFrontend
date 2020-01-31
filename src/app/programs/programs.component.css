@@ -1,8 +1,4 @@
-.bot{
-    border-top: solid #DEDEDE ;
-    margin-top: 200px;
-    width: 100%;
-  }
+
   .mar{
     margin-top: -8px;
   }
@@ -10,22 +6,44 @@
     font-size: 12px;
   }
   .formdesign{
-    /* background-color:  #C0C0C0  ; */
+  
     padding: 5px 5px;
     border-radius: 5px;
   }
-  .babaw{
-    background-color: #0499F9 ;
-    height: 80px;
-  }
+
   .titlenav{
     margin-top: -25px;
-    border-radius: 25px;
-    background-color: #303030;
+    border-bottom: solid #E1E1E1  1px;
   }
   .navbar-brand{
-    color: white;
+    color: black;
   }
   .navbar-brand:hover{
-    color: white;
+    color: black;
   }
+
+.babaw {
+  background-color: #0499f9;
+  height: 80px;
+}
+.left {
+  background-color: #f6f6f6;
+  margin-top: -25px;
+  border-radius: 5px;
+  height: 600px;
+  overflow-y: scroll;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.right {
+  min-height: 600px;
+  background-color: white;
+  margin-top: -25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}

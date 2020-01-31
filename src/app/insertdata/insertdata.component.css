@@ -1,23 +1,46 @@
-.babaw{
-    background-color: #0499F9 ;
-    height: 80px;
-  }
+
   .titlenav{
     margin-top: -25px;
-    border-radius: 25px;
-    background-color: #303030;
+    /* border-radius: 25px;
+    background-color: #303030; */
+    margin-bottom: 10px;
   }
   .navbar-brand{
-    color: white;
+    color: black;
   }
   .navbar-brand:hover{
-    color: white;
+    color: black;
   }
   .active{
     border-bottom:#46E613 solid 2px;
-    color: white;
+    color: black;
    
 }
 .navbar-nav a{
     font-size: 15px;
+}
+
+.babaw {
+  background-color: #0499f9;
+  height: 80px;
+}
+.left {
+  background-color: #f6f6f6;
+  margin-top: -25px;
+  border-radius: 5px;
+  min-height: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.right {
+  min-height: 600px;
+  background-color: white;
+  margin-top: -25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }

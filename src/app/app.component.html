@@ -1,53 +1,61 @@
 <div class="container-flex" id="tophead" >
     <p>Congressional Report System V1.1</p>
   </div>
-<div id="app">
-  <nav class="navbar navbar-expand ">
-    <a href="#" class="navbar-brand"><img src="/assets/logo3.png" class="logs" /></a>
-    <ul class="navbar-nav mr-auto" routerLinkActive="active">
-      <li class="nav-item">
-        <a href="/home" class="nav-link" routerLink="home">Home </a>
-      </li>
-      <li class="nav-item">
-        <a href="/programs" class="nav-link" routerLink="programs">Programs </a>
-      </li>
-      <li class="nav-item">
-          <a href="/insertdata" class="nav-link" routerLink="insertdata">Insert Data </a>
-        </li>
-        <li class="nav-item">
-            <a href="/manageusers" class="nav-link" routerLink="manageusers">Manage Users </a>
-          </li>
-      <li class="nav-item" *ngIf="showAdminBoard">
-        <a href="/admin" class="nav-link" routerLink="admin">Admin Board</a>
-      </li>
-      <li class="nav-item" *ngIf="showModeratorBoard">
-        <a href="/mod" class="nav-link" routerLink="mod">Moderator Board</a>
-      </li>
-      <li class="nav-item">
-        <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
-      </li>
-    </ul>
-
-    <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
-      <li class="nav-item">
-        <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
-      </li>
-      <li class="nav-item">
-        <a href="/login" class="nav-link" routerLink="login">Login</a>
-      </li>
-    </ul>
-
-    <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
-      <li class="nav-item">
-        <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
-      </li>
-      <li class="nav-item">
-        <a href class="nav-link" (click)="logout()">LogOut</a>
-      </li>
-    </ul>
-  </nav>
-
-
+  <nav class="navbar navbar-expand-lg sticky-top">
+      <a class="navbar-brand" href="#"><img src="/assets/logo3.png" class="logs" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav" routerLinkActive="active">
+          <ul class="navbar-nav mr-auto" routerLinkActive="active">
+              <li class="nav-item">
+                <a href="/home" class="nav-link" routerLink="home" >Home </a>
+              </li>
+              <li class="nav-item">
+                <a href="/programs" class="nav-link" routerLink="programs">Programs </a>
+              </li>
+              <li class="nav-item">
+                  <a href="/reports" class="nav-link" routerLink="reports">Reports</a>
+                </li>
+              <li class="nav-item">
+                  <a href="/insertdata" class="nav-link" routerLink="insertdata">Insert Data </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/manageusers" class="nav-link" routerLink="manageusers">Manage Users </a>
+                  </li>
+              <li class="nav-item" *ngIf="showAdminBoard">
+                <a href="/admin" class="nav-link" routerLink="admin">Admin Board</a>
+              </li>
+              <li class="nav-item" *ngIf="showModeratorBoard">
+                <a href="/mod" class="nav-link" routerLink="mod">Moderator Board</a>
+              </li>
+              <li class="nav-item">
+                <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
+              </li>
+            </ul>
+        
+            <ul class="navbar-nav ml-auto " *ngIf="!isLoggedIn">
+              <li class="nav-item">
+                <a href="/register" class="nav-link" routerLink="register">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a href="/login" class="nav-link" routerLink="login">Login</a>
+              </li>
+            </ul>
+            
+            <ul class="navbar-nav ml-auto" *ngIf="isLoggedIn">
+                <li class="nav-item">
+                  <a href="/profile" class="nav-link" routerLink="profile">{{ username }}</a>
+                </li>
+                <li class="nav-item">
+                  <a href class="nav-link" (click)="logout()">LogOut</a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </nav>
+  
   <div class="container-flex">
     <router-outlet></router-outlet>
   </div>

@@ -17,6 +17,8 @@ import { ProfileComponent } from './profile/profile.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { ProgramsComponent } from './programs/programs.component';
 import { FooterComponent } from './footer/footer.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FooterComponent } from './footer/footer.component';
     BoardModeratorComponent,
     ProfileComponent,
     ProgramsComponent,
-    FooterComponent
+    FooterComponent,
+    NotificationsComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,
