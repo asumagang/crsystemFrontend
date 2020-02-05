@@ -1,10 +1,5 @@
 
-  .titlenav{
-    margin-top: -25px;
-    /* border-radius: 25px;
-    background-color: #303030; */
-    margin-bottom: 10px;
-  }
+ 
   .navbar-brand{
     color: black;
   }
@@ -13,11 +8,9 @@
   }
   .active{
     border-bottom:#46E613 solid 2px;
-    color: black;
+    background-color: #0499f9;
+    color: white;
    
-}
-.navbar-nav a{
-    font-size: 15px;
 }
 
 .babaw {
@@ -25,7 +18,7 @@
   height: 80px;
 }
 .left {
-  background-color: #f6f6f6;
+  background-color: white;
   margin-top: -25px;
   border-radius: 5px;
   min-height: 600px;
@@ -33,6 +26,7 @@
   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  padding: 10px 10px;
 }
 .right {
   min-height: 600px;
@@ -44,3 +38,6 @@
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
+/* .list-group{
+    margin-top: -10px;
+} */

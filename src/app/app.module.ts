@@ -19,6 +19,13 @@ import { ProgramsComponent } from './programs/programs.component';
 import { FooterComponent } from './footer/footer.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { ReportsComponent } from './reports/reports.component';
+import { InsertdataComponent } from './insertdata/insertdata.component';
+import { ViewdataComponent } from './insertdata/viewdata/viewdata.component';
+import { RepresentativesComponent } from './insertdata/representatives/representatives.component';
+import { DatatableComponent } from './insertdata/viewdata/datatable/datatable.component';
+import { InsertformComponent } from './insertdata/viewdata/insertform/insertform.component';
+import { RepresentativelistComponent } from './insertdata/representatives/representativelist/representativelist.component';
+import { AddrepresentativeComponent } from './insertdata/representatives/addrepresentative/addrepresentative.component';
 
 @NgModule({
   declarations: [

@@ -15,8 +15,8 @@
               <li class="nav-item">
                 <a href="/programs" class="nav-link" routerLink="programs">Programs </a>
               </li>
-              <li class="nav-item">
-                  <a href="/reports" class="nav-link" routerLink="reports">Reports</a>
+              <li class="nav-item" *ngIf="showAdminBoard">
+                  <a href="/reports" class="nav-link" *ngIf="isLoggedIn" routerLink="reports">Reports</a>
                 </li>
               <li class="nav-item">
                   <a href="/insertdata" class="nav-link" routerLink="insertdata">Insert Data </a>

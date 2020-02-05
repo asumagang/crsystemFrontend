@@ -31,6 +31,7 @@ const routes: Routes = [
     loadChildren: () =>
       import(`./manageusers/manageusers.module`).then(m => m.ManageusersModule)
   },
+  
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

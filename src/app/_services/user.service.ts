@@ -20,7 +20,7 @@ export class UserService {
   }
 
   getModeratorBoard(): Observable<any> {
-    return this.http.get(API_URL + 'mod', { responseType: 'text' });
+    return this.http.get(API_URL + 'pdpo', { responseType: 'text' });
   }
 
   getAdminBoard(): Observable<any> {

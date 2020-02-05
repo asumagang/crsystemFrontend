@@ -1,0 +1,13 @@
+.mar{
+    margin-top: -8px;
+}.bot{
+    border-top: solid #DEDEDE ;
+    margin-top: 200px;
+    width: 100%;
+}
+.mar{
+    margin-top: -4px;
+}
+.label-sm{
+    font-size: 15px;
+}
