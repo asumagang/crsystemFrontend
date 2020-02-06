@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,6 +26,7 @@ import { DatatableComponent } from './insertdata/viewdata/datatable/datatable.co
 import { InsertformComponent } from './insertdata/viewdata/insertform/insertform.component';
 import { RepresentativelistComponent } from './insertdata/representatives/representativelist/representativelist.component';
 import { AddrepresentativeComponent } from './insertdata/representatives/addrepresentative/addrepresentative.component';
+import { AuthGuard } from './_helpers/auth.guard';
 
 @NgModule({
   declarations: [
@@ -46,9 +47,10 @@ import { AddrepresentativeComponent } from './insertdata/representatives/addrepr
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
-  providers: [authInterceptorProviders],
+  providers: [authInterceptorProviders,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

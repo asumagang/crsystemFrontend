@@ -1,5 +1,5 @@
 .carou{
-    background-color: #F6F6F6 ;
+    background-color: #0499f9 ;
     height: 500px;
 }
 .left{
@@ -7,4 +7,7 @@
 }
 img{
     max-width:100%
+}
+h1{
+    color: white;
 }

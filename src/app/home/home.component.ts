@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../_services/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { UserService } from '../_services/user.service';
 export class HomeComponent implements OnInit {
   content: string;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService,private router:Router) { }
 
   ngOnInit() {
     this.userService.getPublicContent().subscribe(
@@ -20,5 +21,10 @@ export class HomeComponent implements OnInit {
         this.content = JSON.parse(err.error).message;
       }
     );
+  }
+  register() {
+    console.log("clicked");
+    this.router.navigate( ["/register"] );
+
   }
 }

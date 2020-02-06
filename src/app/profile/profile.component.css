@@ -1,0 +1,48 @@
+
+  .mar{
+    margin-top: -8px;
+  }
+  .label-sm{
+    font-size: 12px;
+  }
+  .formdesign{
+  
+    padding: 5px 5px;
+    border-radius: 5px;
+  }
+
+  .titlenav{
+    margin-top: -25px;
+    border-bottom: solid #E1E1E1  1px;
+  }
+  .navbar-brand{
+    color: black;
+  }
+  .navbar-brand:hover{
+    color: black;
+  }
+
+.babaw {
+  background-color: #0499f9;
+  height: 80px;
+}
+.left {
+  background-color: white;
+  margin-top: -25px;
+  border-radius: 5px;
+  height: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.right {
+  min-height: 600px;
+  background-color: white;
+  margin-top: -25px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}

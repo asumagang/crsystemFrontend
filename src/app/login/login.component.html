@@ -1,5 +1,5 @@
 <div class="col-md-12">
-  <div class="card card-container">
+  <div class="card card-container bg-white">
     <img
       id="profile-img"
       src="/assets/logo3.png"
@@ -13,6 +13,8 @@
       #f="ngForm"
       novalidate
     >
+    <br>
+    <h4>Login</h4>
       <div class="form-group">
         <label for="username">Username</label>
         <input
@@ -58,9 +60,9 @@
           Login
         </button>
       </div>
-      <div class="form-group">
+      <div class="form-group ">
         <div
-          class="alert alert-danger"
+          class="alert alert-danger "
           role="alert"
           *ngIf="f.submitted && isLoginFailed"
         >
@@ -69,7 +71,7 @@
       </div>
     </form>
 
-    <div class="alert alert-success" *ngIf="isLoggedIn">
+    <div class="alert  text-center bg-primary" *ngIf="isLoggedIn">
       Logged in as {{ roles }}.
     </div>
   </div>

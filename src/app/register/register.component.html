@@ -1,5 +1,5 @@
 <div class="col-md-12">
-  <div class="card card-container">
+  <div class="card card-container bg-white">
     <img
       id="profile-img"
       src="/assets/logo3.png"
@@ -13,6 +13,8 @@
       #f="ngForm"
       novalidate
     >
+    <br>
+    <h4>Sign up</h4>
       <div class="form-group">
         <label for="username">Username</label>
         <input
@@ -46,7 +48,7 @@
           email
           #email="ngModel"
         />
-        <div class="alert-danger" *ngIf="f.submitted && email.invalid">
+        <div class="alert-danger " *ngIf="f.submitted && email.invalid">
           <div *ngIf="email.errors.required">Email is required</div>
           <div *ngIf="email.errors.email">
             Email must be a valid email address
