@@ -26,28 +26,18 @@
                   <!-- <li class="nav-item">
                     <a href="/home" class="nav-link" routerLink="home" >Home </a>
                   </li> -->
-                  <li class="nav-item" *ngIf="showAdminBoard">
-                    <a href="/programs" class="nav-link" *ngIf="isLoggedIn" routerLink="programs"><i class="fa fa-heart" aria-hidden="true"></i> Programs </a>
+                  <li class="nav-item navicon" *ngIf="showAdminBoard">
+                    <a href="/programs" class="nav-link" *ngIf="isLoggedIn" routerLink="programs" placement="bottom" ngbTooltip="Programs"><img src="/assets/proglogo.png" alt="" /></a>
                   </li>
-                  <li class="nav-item" *ngIf="showAdminBoard">
-                      <a href="/reports" class="nav-link" *ngIf="isLoggedIn" routerLink="reports"><i class="fa fa-file-text-o" aria-hidden="true"></i>
-                         Reports</a>
+                  <li class="nav-item navicon"  *ngIf="showAdminBoard">
+                      <a href="/reports" class="nav-link" *ngIf="isLoggedIn" routerLink="reports" placement="bottom" ngbTooltip="Reports"><img src="/assets/reportlogo.png" alt="" /></a>
                     </li>
-                  <li class="nav-item">
-                      <a href="/insertdata" class="nav-link" *ngIf="isLoggedIn" routerLink="insertdata"> <i class="fa fa-table" aria-hidden="true"></i> Insert Data </a>
+                  <li class="nav-item navicon">
+                      <a href="/insertdata" class="nav-link" *ngIf="isLoggedIn" routerLink="insertdata" placement="bottom" ngbTooltip="Insert Data"> <img src="/assets/insertlogo.png" alt="" /></a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/manageusers" class="nav-link" *ngIf="isLoggedIn" routerLink="manageusers"><i class="fa fa-users" aria-hidden="true"></i> Manage Users </a>
+                    <li class="nav-item navicon">
+                        <a href="/manageusers" class="nav-link" *ngIf="isLoggedIn" routerLink="manageusers" placement="bottom" ngbTooltip="Manage Users"><img src="/assets/muserslogo.png" alt="" /></a>
                       </li>
-                  <!-- <li class="nav-item" *ngIf="showAdminBoard">
-                    <a href="/admin" class="nav-link" routerLink="admin">Admin Board</a>
-                  </li>
-                  <li class="nav-item" *ngIf="showModeratorBoard">
-                    <a href="/mod" class="nav-link" routerLink="mod">Moderator Board</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="/user" class="nav-link" *ngIf="isLoggedIn" routerLink="user">User</a>
-                  </li> -->
                 </ul>
 
                 <ul class="navbar-nav ml-auto " *ngIf="!isLoggedIn">

@@ -6,9 +6,6 @@ import { LoginComponent } from "./login/login.component";
 import { HomeComponent } from "./home/home.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { BoardUserComponent } from "./board-user/board-user.component";
-import { BoardModeratorComponent } from "./board-moderator/board-moderator.component";
-import { BoardAdminComponent } from "./board-admin/board-admin.component";
-import { ProgramsComponent } from "./programs/programs.component";
 import { ReportsComponent } from "./reports/reports.component";
 import { AuthGuard } from "./_helpers/auth.guard";
 
@@ -18,14 +15,16 @@ const routes: Routes = [
   { path: "register", component: RegisterComponent },
   { path: "profile", component: ProfileComponent, canActivate: [AuthGuard] },
   { path: "user", component: BoardUserComponent , canActivate: [AuthGuard]},
-  { path: "mod", component: BoardModeratorComponent , canActivate: [AuthGuard]},
-  { path: "admin", component: BoardAdminComponent , canActivate: [AuthGuard]},
-  { path: "programs", component: ProgramsComponent, canActivate: [AuthGuard] },
   { path: "reports", component: ReportsComponent, canActivate: [AuthGuard] },
   {
     path: "insertdata",
     loadChildren: () =>
       import(`./insertdata/insertdata.module`).then(m => m.InsertdataModule), canActivate: [AuthGuard]
+  },
+  {
+    path: "programs",
+    loadChildren: () =>
+      import(`./programs/programs.module`).then(m => m.ProgramsModule), canActivate: [AuthGuard]
   },
   {
     path: "manageusers",

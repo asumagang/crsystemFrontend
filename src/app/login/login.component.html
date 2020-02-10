@@ -13,13 +13,12 @@
       #f="ngForm"
       novalidate
     >
-    <br>
     <h4>Login</h4>
       <div class="form-group">
         <label for="username">Username</label>
         <input
           type="text"
-          class="form-control"
+          class="form-control form-control-sm"
           name="username"
           [(ngModel)]="form.username"
           required
@@ -37,7 +36,7 @@
         <label for="password">Password</label>
         <input
           type="password"
-          class="form-control"
+          class="form-control form-control-sm"
           name="password"
           [(ngModel)]="form.password"
           required
