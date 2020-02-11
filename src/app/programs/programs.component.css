@@ -39,3 +39,11 @@
   margin-top: -35px;
   background-color: white;
 }
+.tabody tr{
+  font-size: 15px;
+  height: 15px;
+}
+.light-blue-backdrop {
+  background-color: black;
+  opacity: 1;
+}

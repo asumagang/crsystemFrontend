@@ -1,8 +1,8 @@
-export interface Programs{
+export interface Program{
     id:number;
     name:string;
     department:string;
-    funds:number;
-    target:number
+    funds:string;
+    target:string;
 
 }
